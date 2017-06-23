@@ -7,11 +7,13 @@ app.set('view engine', 'mustache');
 app.use(express.static('public'))
 
 function guessCurrentGuess(){
-  return Math.floor( (max - min) / 2 );
+  var spread = Math.floor( (max - min) / 2 );
+  return min + spread;
 }
 
 var min = 0;
 var max = 100;
+var correct = false;
 var currentGuess = guessCurrentGuess();
 
 app.get('/', function(req, res){
