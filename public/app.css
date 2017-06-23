@@ -1,0 +1,25 @@
+.wrapper {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+  margin-top: 50px;
+}
+.guess {
+  flex: 1;
+  font-size: 90px;
+}
+aside {
+  padding-left: 50px;
+  flex-basis: 30%;
+  text-align: center;
+}
+
+aside ul {
+  list-style: none;
+}
+aside ul li {
+  margin: 20px;
+}
